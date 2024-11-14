@@ -1,6 +1,10 @@
-# Mansion Maniac
+# Deprecated
 
-## Build your own Manhattan Mansion!
+As of October 2024, Mansion Maniac will no longer be updated by NYPL and will soon be archived. Source code for the site is available here: https://github.com/nypl-publicdomain/mansion-maniac and the digitized Apartment Houses of the Metropolis collection can be viewed here: https://digitalcollections.nypl.org/collections/apartment-houses-of-the-metropolis.
+
+## Mansion Maniac
+
+### Build your own Manhattan Mansion!
 
 This is a procedural maze/dungeon builder that uses blueprints from NYPL's [Apartment Houses of the Metropolis](http://digitalcollections.nypl.org/collections/apartment-houses-of-the-metropolis#/?tab=about) collection. Individual rooms were cut out from the images in the collection and manually annotated with the [room editor](#room-editor). This places every room in a square grid that then allows for the player's avatar to explore.
 
@@ -34,6 +38,34 @@ If you're interested in procedural dungeons similar to this one or those used in
 
 If there are no available doors to go through or if the player moves on an area where two rooms overlap (the algorithm does not check for overlap prevention) you will need to press `Restart` to create a new mansion. You can also `Save` the current mansion as a `PNG` file and download it.
 
+### Local setup
+
+1. Install the required packages
+
+```bash
+npm install
+```
+
+2. Run the app locally with npm:
+
+```bash
+npm run start
+```
+
+3. To re-compile your CSS as you change it during local development, run:
+
+```bash
+npm run dev
+```
+
+### Deploying
+
+Push to `gh-pages` to deploy to Github Pages. Be sure to compile before committing by running
+
+```bash
+npm run build
+```
+
 ### Other credits
 
 Made with [CreateJS](http://createjs.com/) and [TypeScript](http://typescriptlang.org/).
@@ -48,9 +80,9 @@ See [license](/LICENSE).
 
 ### About the NYPL Public Domain Release
 
-On January 6, 2016, The New York Public Library enhanced access to public domain items in Digital Collections so that everyone has the freedom to enjoy and reuse these materials in almost limitless ways. For all such items the Library now makes it possible to download the highest resolution images available directly from the [Digital Collections](http://digitalcollections.nypl.org) website. 
+On January 6, 2016, The New York Public Library enhanced access to public domain items in Digital Collections so that everyone has the freedom to enjoy and reuse these materials in almost limitless ways. For all such items the Library now makes it possible to download the highest resolution images available directly from the [Digital Collections](http://digitalcollections.nypl.org) website.
 
-That means more than 187,000 items free to use without restriction! But we know that 180K of anything is a lot to get your head around — so as a way to introduce you to these collections and inspire new works, NYPL Labs developed a suite of [projects and tools](http://nypl.org/publicdomain) to help you explore the vast collections and dive deep into specific ones. 
+That means more than 187,000 items free to use without restriction! But we know that 180K of anything is a lot to get your head around — so as a way to introduce you to these collections and inspire new works, NYPL Labs developed a suite of [projects and tools](http://nypl.org/publicdomain) to help you explore the vast collections and dive deep into specific ones.
 
 Go forth, reuse, and let us know what you made with the #nyplremix hashtag! For more information:
 
