@@ -38,6 +38,34 @@ If you're interested in procedural dungeons similar to this one or those used in
 
 If there are no available doors to go through or if the player moves on an area where two rooms overlap (the algorithm does not check for overlap prevention) you will need to press `Restart` to create a new mansion. You can also `Save` the current mansion as a `PNG` file and download it.
 
+### Local setup
+
+1. Install the required packages
+
+```bash
+npm install
+```
+
+2. Run the app locally with npm:
+
+```bash
+npm run start
+```
+
+3. To re-compile your CSS as you change it during local development, run:
+
+```bash
+npm run dev
+```
+
+### Deploying
+
+Push to `gh-pages` to deploy to Github Pages. Be sure to compile before committing by running
+
+```bash
+npm run build
+```
+
 ### Other credits
 
 Made with [CreateJS](http://createjs.com/) and [TypeScript](http://typescriptlang.org/).
