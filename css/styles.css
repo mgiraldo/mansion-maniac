@@ -65,7 +65,6 @@ sup             { vertical-align: super }
   position: absolute;
   z-index: 71;
   top: 0px;
-  margin-top:76px;
   left: 0px;
   right: 0px;
   background-color: #C0BCB2;
@@ -93,7 +92,7 @@ sup             { vertical-align: super }
 #loader {
   position: absolute;
   left: 0;
-  top: 80px;
+  top: 0;
   right: 0;
   bottom: 0;
   text-align: center;

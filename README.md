@@ -1,14 +1,10 @@
-# Deprecated
+# Mansion Maniac
 
-As of October 2024, Mansion Maniac will no longer be updated by NYPL and will soon be archived. Source code for the site is available here: https://github.com/nypl-publicdomain/mansion-maniac and the digitized Apartment Houses of the Metropolis collection can be viewed here: https://digitalcollections.nypl.org/collections/apartment-houses-of-the-metropolis.
-
-## Mansion Maniac
-
-### Build your own Manhattan Mansion!
+## Build your own Manhattan Mansion!
 
 This is a procedural maze/dungeon builder that uses blueprints from NYPL's [Apartment Houses of the Metropolis](http://digitalcollections.nypl.org/collections/apartment-houses-of-the-metropolis#/?tab=about) collection. Individual rooms were cut out from the images in the collection and manually annotated with the [room editor](#room-editor). This places every room in a square grid that then allows for the player's avatar to explore.
 
-### [Play now!](http://publicdomain.nypl.org/mansion-maniac/)
+## [Play now!](http://publicdomain.nypl.org/mansion-maniac/)
 
 ![animated screen capture of game](/images/readme-animated.gif?raw=true)
 
@@ -16,7 +12,7 @@ Uses images from the [Apartment Houses of the Metropolis](http://digitalcollecti
 
 [![The Fiora-Ville and Paterno, 616 and 620 West 116th Street, near Riverside Drive ; Plan of first floor ; Plan of upper floors.](/images/readme-page-1.jpg?raw=true)](http://digitalcollections.nypl.org/items/510d47db-9ec9-a3d9-e040-e00a18064a99) [![The Euafaula, northeast corner Hamilton Place and 139th Street; Plan of first floor; Plan of upper floors.](/images/readme-page-2.jpg?raw=true)](http://digitalcollections.nypl.org/items/510d47db-9ef3-a3d9-e040-e00a18064a99)
 
-### Room editor
+## Room editor
 
 The player's avatar moves on a square grid, where each square can be one of three different tile types:
 
@@ -34,11 +30,11 @@ _Easter egg_: there is a “debug mode” in the game that shows the different t
 
 If you're interested in procedural dungeons similar to this one or those used in videogames, here's [a nice write up on dungeon algorithms](http://www.futuredatalab.com/proceduraldungeon/).
 
-### End game and saving
+## End game and saving
 
 If there are no available doors to go through or if the player moves on an area where two rooms overlap (the algorithm does not check for overlap prevention) you will need to press `Restart` to create a new mansion. You can also `Save` the current mansion as a `PNG` file and download it.
 
-### Local setup
+## Local setup
 
 1. Install the required packages
 
@@ -58,7 +54,7 @@ npm run start
 npm run dev
 ```
 
-### Deploying
+## Deploying
 
 Push to `gh-pages` to deploy to Github Pages. Be sure to compile before committing by running
 
@@ -66,7 +62,7 @@ Push to `gh-pages` to deploy to Github Pages. Be sure to compile before committi
 npm run build
 ```
 
-### Other credits
+## Other credits
 
 Made with [CreateJS](http://createjs.com/) and [TypeScript](http://typescriptlang.org/).
 
@@ -74,11 +70,11 @@ The name of this project is inspired by the amazing [Maniac Mansion](https://en.
 
 ---
 
-### License
+## License
 
 See [license](/LICENSE).
 
-### About the NYPL Public Domain Release
+## About the NYPL Public Domain Release
 
 On January 6, 2016, The New York Public Library enhanced access to public domain items in Digital Collections so that everyone has the freedom to enjoy and reuse these materials in almost limitless ways. For all such items the Library now makes it possible to download the highest resolution images available directly from the [Digital Collections](http://digitalcollections.nypl.org) website.
 
