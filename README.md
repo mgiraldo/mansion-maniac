@@ -1,10 +1,10 @@
 # Mansion Maniac
 
-## Build your own Manhattan Mansion!
+## Build your own Manhattan Mansion
 
 This is a procedural maze/dungeon builder that uses blueprints from NYPL's [Apartment Houses of the Metropolis](http://digitalcollections.nypl.org/collections/apartment-houses-of-the-metropolis#/?tab=about) collection. Individual rooms were cut out from the images in the collection and manually annotated with the [room editor](#room-editor). This places every room in a square grid that then allows for the player's avatar to explore.
 
-## [Play now!](http://publicdomain.nypl.org/mansion-maniac/)
+## [Play now!](https://mgiraldo.github.io/mansion-maniac/)
 
 ![animated screen capture of game](/images/readme-animated.gif?raw=true)
 
@@ -42,13 +42,13 @@ If there are no available doors to go through or if the player moves on an area 
 npm install
 ```
 
-2. Run the app locally with npm:
+1. Run the app locally with npm:
 
 ```bash
 npm run start
 ```
 
-3. To re-compile your CSS as you change it during local development, run:
+1. To re-compile your CSS as you change it during local development, run:
 
 ```bash
 npm run dev
