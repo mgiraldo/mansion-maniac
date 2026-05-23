@@ -70,6 +70,10 @@ The name of this project is inspired by the amazing [Maniac Mansion](https://en.
 
 ---
 
+## See also
+
+See also [MUD of Babel](https://github.com/mgiraldo/mud-of-babel), a generative Multi-User Dungeon (MUD) with rooms built from the Library of Congress Classification Outline.
+
 ## License
 
 See [license](/LICENSE).
