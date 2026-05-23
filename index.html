@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-  <meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no ,initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport"
+    content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no ,initial-scale=1.0" />
 
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -16,24 +18,37 @@
     @import url(css/styles.css);
   </style>
 </head>
+
 <body>
   <canvas id="easelCanvas" class="mansion" width="100%" height="100%"></canvas>
   <div id="score">0 ft<sup>2</sup> (0 m<sup>2</sup>)</div>
   <div id="controls">
     <div class="zoom">
-      <div class="button zoomin" onmouseout="_maniac.endAction()" onmouseup="_maniac.endAction()" onmousedown="_maniac.startAction('zoomin')" ontouchstart="_maniac.startAction('zoomin')" ontouchend="_maniac.endAction()" ontouchcancel="_maniac.endAction()">+</div>
-      <div class="button zoomout" onmouseout="_maniac.endAction()" onmouseup="_maniac.endAction()" onmousedown="_maniac.startAction('zoomout')" ontouchstart="_maniac.startAction('zoomout')" ontouchend="_maniac.endAction()" ontouchcancel="_maniac.endAction()">-</div>
+      <div class="button zoomin" onmouseout="_maniac.endAction()" onmouseup="_maniac.endAction()"
+        onmousedown="_maniac.startAction('zoomin')" ontouchstart="_maniac.startAction('zoomin')"
+        ontouchend="_maniac.endAction()" ontouchcancel="_maniac.endAction()">+</div>
+      <div class="button zoomout" onmouseout="_maniac.endAction()" onmouseup="_maniac.endAction()"
+        onmousedown="_maniac.startAction('zoomout')" ontouchstart="_maniac.startAction('zoomout')"
+        ontouchend="_maniac.endAction()" ontouchcancel="_maniac.endAction()">-</div>
     </div>
     <div class="arrows">
       <div class="column">
-        <div class="button left" onmouseout="_maniac.endAction()" onmouseup="_maniac.endAction()" onmousedown="_maniac.startAction('left')" ontouchstart="_maniac.startAction('left')" ontouchend="_maniac.endAction()" ontouchcancel="_maniac.endAction()">Left<span class="help">←</span></div>
+        <div class="button left" onmouseout="_maniac.endAction()" onmouseup="_maniac.endAction()"
+          onmousedown="_maniac.startAction('left')" ontouchstart="_maniac.startAction('left')"
+          ontouchend="_maniac.endAction()" ontouchcancel="_maniac.endAction()">Left<span class="help">←</span></div>
       </div>
       <div class="column">
-        <div class="button up" onmouseout="_maniac.endAction()" onmouseup="_maniac.endAction()" onmousedown="_maniac.startAction('up')" ontouchstart="_maniac.startAction('up')" ontouchend="_maniac.endAction()" ontouchcancel="_maniac.endAction()">Up<span class="help">↑</span></div>
-        <div class="button down" onmouseout="_maniac.endAction()" onmouseup="_maniac.endAction()" onmousedown="_maniac.startAction('down')" ontouchstart="_maniac.startAction('down')" ontouchend="_maniac.endAction()" ontouchcancel="_maniac.endAction()">Down<span class="help">↓</span></div>
+        <div class="button up" onmouseout="_maniac.endAction()" onmouseup="_maniac.endAction()"
+          onmousedown="_maniac.startAction('up')" ontouchstart="_maniac.startAction('up')"
+          ontouchend="_maniac.endAction()" ontouchcancel="_maniac.endAction()">Up<span class="help">↑</span></div>
+        <div class="button down" onmouseout="_maniac.endAction()" onmouseup="_maniac.endAction()"
+          onmousedown="_maniac.startAction('down')" ontouchstart="_maniac.startAction('down')"
+          ontouchend="_maniac.endAction()" ontouchcancel="_maniac.endAction()">Down<span class="help">↓</span></div>
       </div>
       <div class="column">
-        <div class="button right" onmouseout="_maniac.endAction()" onmouseup="_maniac.endAction()" onmousedown="_maniac.startAction('right')" ontouchstart="_maniac.startAction('right')" ontouchend="_maniac.endAction()" ontouchcancel="_maniac.endAction()">Right<span class="help">→</span></div>
+        <div class="button right" onmouseout="_maniac.endAction()" onmouseup="_maniac.endAction()"
+          onmousedown="_maniac.startAction('right')" ontouchstart="_maniac.startAction('right')"
+          ontouchend="_maniac.endAction()" ontouchcancel="_maniac.endAction()">Right<span class="help">→</span></div>
       </div>
     </div>
     <div class="export">
@@ -42,14 +57,20 @@
     </div>
   </div>
   <div id="credits">
-    <a href="//nypl.org" target="_blank" title="open nypl.org in a new window"><span class="lion">The New York Public Library</span></a> A <a href="//publicdomain.nypl.org">public domain remix</a> by <a href="//mstdn.social/@mgiraldo">Mauricio Giraldo</a> while at the now-defunct NYPL Labs, using the <a href="http://digitalcollections.nypl.org/collections/apartment-houses-of-the-metropolis#/?tab=about">Apartment Houses of the Metropolis collection</a>. <a href="//github.com/mgiraldo/mansion-maniac">View source code</a>.
+    A <a href="https://www.nypl.org/blog/2016/01/05/share-public-domain-collections">public domain remix</a> by <a
+      href="//mstdn.social/@mgiraldo">Mauricio Giraldo</a> while at the now-defunct NYPL Labs, using the <a
+      href="http://digitalcollections.nypl.org/collections/apartment-houses-of-the-metropolis#/?tab=about">Apartment
+      Houses of the Metropolis collection</a>. <a href="//github.com/mgiraldo/mansion-maniac">View source code</a>.
   </div>
   <div id="loader">
     <div class="wrapper">
       <div class="mansion">
         <h1>MANSION MANIAC</h1>
         <div class="description">
-          <p>Built from digitized assets of the New York Public Library's collection of <a target="_blank" href="http://digitalcollections.nypl.org/collections/apartment-houses-of-the-metropolis#/?tab=about">Apartment Houses of the Metropolis</a>, this game/toy lets you explore mansion floor plans from the early 20th century in New York City.</p>
+          <p>Built from digitized assets of the New York Public Library's collection of <a target="_blank"
+              href="http://digitalcollections.nypl.org/collections/apartment-houses-of-the-metropolis#/?tab=about">Apartment
+              Houses of the Metropolis</a>, this game/toy lets you explore mansion floor plans from the early 20th
+            century in New York City.</p>
           <p>Move around and zoom using the provided buttons:<br />←, ↑, ↓, →, +, -</p>
           <div class="total"><span id="progress"></span></div>
           <div class="button" id="start-button">Loading...</div>
@@ -61,17 +82,20 @@
     <h1>YOUR MANSION</h1>
     <p id="save-score">You created a mansion with X rooms and Y ft<sup>2</sup> (Z m<sup>2</sup>).</p>
     <p>Click/tap on the image to download it</p>
-    <p><a target="_blank" href="http://digitalcollections.nypl.org/collections/apartment-houses-of-the-metropolis#/?tab=about">View the original assets used in your floorplan</a>.</p>
+    <p><a target="_blank"
+        href="http://digitalcollections.nypl.org/collections/apartment-houses-of-the-metropolis#/?tab=about">View the
+        original assets used in your floorplan</a>.</p>
     <p><a onclick="_maniac.closeSave()">Return to Mansion Maniac</a></p>
     <a id="mansion-image"><img width="800" /></a>
   </div>
   <script src="js/lib/underscore-min.js"></script>
   <script src="js/mansion.js"></script>
   <script type="text/javascript">
-  var _maniac = new Mansion.Mansion();
-  window.onload = function () {
-    _maniac.mansion();
-  }
+    var _maniac = new Mansion.Mansion();
+    window.onload = function () {
+      _maniac.mansion();
+    }
   </script>
 </body>
+
 </html>
